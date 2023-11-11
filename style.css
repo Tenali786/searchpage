@@ -380,12 +380,13 @@ button, a, input {
   justify-content: center;
   align-items: center;
   outline: none;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   text-decoration: none;
   border-radius: 100%;
   background: #fff;
   text-align: center;
+  margin: 0px 8px;
 }
 .social-button::after {
   content: '';
@@ -670,30 +671,7 @@ button, a, input {
 
 /* Shadow */
 main { position: relative; }
-main::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 115%;
-  left: 0;
-  width: var(--atom-size);
-  height: var(--nucleus-size);
-  background-image: radial-gradient(closest-side, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
-  border-radius: 100%;
-  transform: scale(1, .8);
-  animation: 8s shadow infinite cubic-bezier(1, .25, 0, .75);
-}
-@keyframes shadow {
-  0% {    transform: scale(1, .8) translateY(0); }
-  12.5% { transform: scale(.7, .7) translateY(-20px); }
-  25% {   transform: scale(1, .8) translateY(0); }
-  37.5% { transform: scale(.7, .7) translateY(-20px); }
-  50% {   transform: scale(1, .8) translateY(0); }
-  62.5% { transform: scale(.7, .7) translateY(-20px); }
-  75% {   transform: scale(1, .8) translateY(0); }
-  87.5% { transform: scale(.7, .7) translateY(-20px); }
-  100% {  transform: scale(1, .8) translateY(0); }
-}
+
 
 /* Credits */
 footer {
@@ -722,9 +700,6 @@ a:hover {
 }
 .parent {
   border: 1px solid black;
-  margin: 1rem;
-  padding: 2rem 2rem;
-  text-align: center;
 }
 .child {
   display: inline-block;
@@ -1009,10 +984,6 @@ h3{
 font-family: 'Pacifico', cursive;
 font-weight: 100;
 margin: 0px;
-position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50% ,-50%);
   color: #fff;
   font-size: 30px;
   text-shadow: 0px 0px 20px #00aad4;
